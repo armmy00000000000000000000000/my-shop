@@ -1,0 +1,72 @@
+body {
+  font-family: 'Kanit', sans-serif;
+}
+
+/* ใช้ฟอนต์ Kanit สำหรับหัวข้อ */
+h1, h2, h3, h4, h5,h6,p {
+  font-family: 'Kanit', sans-serif;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.notificationtime {
+  position: fixed; /* ทำให้สามารถวางทับได้ */
+  top: 50%; /* ตั้งค่าตรงกลางในแนวตั้ง */
+  left: 50%; /* ตั้งค่าตรงกลางในแนวนอน */
+  transform: translate(-50%, -50%); /* ย้ายกลับครึ่งหนึ่ง */
+  text-align: center; /* จัดข้อความให้ตรงกลาง */
+  background-color: rgba(255, 255, 255, 0.9); /* พื้นหลังขาวโปร่งแสง */
+  padding: 30px; /* ระยะห่างรอบๆ */
+  border-radius: 10px; /* ขอบมน */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* เงา */
+  z-index: 1000; /* ทำให้แสดงอยู่ด้านบน */
+}
+
+.notificationtime h2 {
+  font-size: 24px; /* ขนาดตัวอักษร */
+  margin: 0; /* ไม่มีระยะห่างข้างนอก */
+  color: #333; /* สีตัวอักษร */
+}
+
+.notificationtime p {
+  font-size: 18px; /* ขนาดตัวอักษร */
+  color: #555; /* สีตัวอักษร */
+  margin-top: 10px; /* ระยะห่างระหว่างหัวข้อและข้อความ */
+}

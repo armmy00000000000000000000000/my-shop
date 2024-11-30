@@ -1,0 +1,134 @@
+.custom-nav {
+    background-color: #007bff; /* สีพื้นหลังเมนู */
+    border-radius: 0.5rem; /* มุมมน */
+  }
+  
+  .custom-nav .nav-link {
+    border: 1px solid transparent; /* ขอบเมนู */
+    border-radius: 0.5rem; /* มุมมน */
+
+    color: #050505; /* สีตัวอักษร */
+    transition: background-color 0.3s, color 0.3s; /* เอฟเฟกต์การเปลี่ยนสี */
+  }
+  
+  .custom-nav .nav-link.active {
+    background-color: #0056b3; /* สีพื้นหลังของเมนูที่เลือก */
+  }
+  
+  .custom-nav .nav-link:hover {
+    background-color: #0056b3; /* สีพื้นหลังเมื่อเอาเมาส์ไปวาง */
+  }
+  
+  .card {
+    transition: transform 0.3s, box-shadow 0.3s; /* เอฟเฟกต์การขยาย */
+    border-radius: 15px; /* มุมมนของการ์ด */
+  }
+  
+
+  .card-title {
+    font-weight: bold; /* ตัวหนา */
+  }
+  
+  .card-text {
+    font-size: 1rem; /* ขนาดตัวอักษร */
+  }
+
+  /* สร้างเอฟเฟกต์ overlay สำหรับการ์ด */ 
+  
+  .card:hover .overlay {
+    opacity: 1; /* ทำให้ overlay มองเห็นเมื่อวางเมาส์ */
+  }
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* ทำให้ข้อความอยู่กลางหน้า */
+    font-size: 24px; /* ขนาดตัวอักษร */
+    color: #007bff; /* เปลี่ยนสีข้อความ */
+    font-weight: bold; /* ทำให้ตัวหนา */
+    animation: fadeIn 1s; /* เพิ่มเอฟเฟกต์ fade-in */
+}
+
+
+
+  .custom-nav {
+    background-color: #f8f9fa; /* สีพื้นหลัง */
+    border-radius: 10px; /* มุมโค้ง */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เงา */
+    display: flex; /* ใช้ Flexbox เพื่อจัดเรียง */
+    overflow-x: auto; /* ให้สามารถเลื่อนด้านข้างได้ */
+    white-space: nowrap; /* ป้องกันไม่ให้ข้อความถูกตัด */
+    padding: 0; /* ลบ padding */
+    margin: 0; /* ลบ margin */
+  }
+  
+  .custom-nav .nav-item {
+    flex: 0 0 auto; /* ป้องกันการหดตัว */
+    margin-right: 10px; /* เพิ่มระยะห่างระหว่างเมนู */
+  }
+  
+  .custom-nav::-webkit-scrollbar {
+    height: 8px; /* ความสูงของ scrollbar */
+  }
+  
+  .custom-nav::-webkit-scrollbar-thumb {
+    background: #888; /* สีของ scrollbar */
+    border-radius: 10px; /* มุมโค้ง */
+  }
+  
+  .custom-nav::-webkit-scrollbar-thumb:hover {
+    background: #555; /* สีของ scrollbar เมื่อ hover */
+  }
+  
+  
+  
+.card-scan {
+  border-radius: 1em;
+  
+}
+.card-title {
+  color:white;
+  border-radius: 1em 1em 0 0;
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/01ub-bg.png) center center no-repeat;
+  background-size: cover;
+}
+
+
+
+.card-item {
+  height: 13em;
+  width: 15em;
+  position: relative;
+}
+.input[type="radio"]{
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  position: absolute;
+  box-shadow: 0px 0px 15px rgba(2,28,53,0.08);
+  cursor: pointer;
+  outline: none;
+}
+
+.labell{
+  position: absolute;
+}
+.input[type="radio"]:hover{
+  transform: scale(1.05);
+}
+.input[type="radio"]:checked{
+  border: 3px solid var(--primary);
+}
+.input[type="radio"]:checked:after{
+  background-color: var(--primary);
+}
+
+
+.se-date button {
+  border-radius: 0.3em;
+}
+
+
